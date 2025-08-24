@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gao Meng (gaomn) - 个人数字名片</title>
+    
+    <!-- 引入 Tailwind CSS 以进行快速样式设计 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 引入 Google Fonts 字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 引入 Lucide Icons 图标库 -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* 使用 Inter 作为默认字体 */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* 自定义一个细微的背景光晕效果 */
+        .glow-effect {
+            background-image: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white flex items-center justify-center min-h-screen p-4 glow-effect">
+
+    <!-- 名片容器 -->
+    <div class="w-full max-w-sm bg-slate-800/60 backdrop-blur-xl border border-slate-700 rounded-2xl shadow-2xl p-8 transform transition-all duration-500 hover:scale-105">
+        
+        <!-- 个人信息区域 -->
+        <div class="flex flex-col items-center text-center">
+            <img 
+                class="w-28 h-28 rounded-full border-4 border-slate-600 shadow-lg mb-4" 
+                src="https://placehold.co/112x112/1e293b/ffffff?text=GM" 
+                alt="Gao Meng 的头像"
+                onerror="this.onerror=null;this.src='https://placehold.co/112x112/1e293b/ffffff?text=GM';"
+            >
+            <h1 class="text-3xl font-bold text-cyan-400">Gao Meng</h1>
+            <p class="text-lg text-slate-300 mt-1">gaomn</p>
+            <p class="text-md text-slate-400 mt-2">南开大学 (Nankai University)</p>
+        </div>
+
+        <!-- 分隔线 -->
+        <hr class="border-t border-slate-700 my-6">
+
+        <!-- 详细信息列表 -->
+        <div class="space-y-4">
+            <!-- 邮箱 -->
+            <div class="flex items-center group">
+                <i data-lucide="mail" class="w-5 h-5 text-slate-400 mr-4 group-hover:text-cyan-400 transition-colors"></i>
+                <a href="mailto:gaomeng.one@gmail.com" class="text-slate-300 group-hover:text-white transition-colors break-all">gaomeng.one@gmail.com</a>
+            </div>
+            
+            <!-- 研究兴趣 -->
+            <div class="flex items-center group">
+                <i data-lucide="brain-circuit" class="w-5 h-5 text-slate-400 mr-4 group-hover:text-cyan-400 transition-colors"></i>
+                <span class="text-slate-300">机器学习 & 强化学习</span>
+            </div>
+            
+            <!-- GitHub (示例) -->
+            <div class="flex items-center group">
+                <i data-lucide="github" class="w-5 h-5 text-slate-400 mr-4 group-hover:text-cyan-400 transition-colors"></i>
+                <a href="#" class="text-slate-300 group-hover:text-white transition-colors">GitHub Profile</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // 渲染所有 Lucide 图标
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

@@ -6,16 +6,16 @@
     <title>Gao Meng (gaomn) - 控制科学与工程 | 南开大学</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="高猛 (Gao Meng) - 南开大学控制科学与工程专业，专注于机器学习和强化学习研究">
-    <meta name="keywords" content="Gao Meng, 高猛, gaomn, 南开大学, Nankai University, 控制科学与工程, 机器学习, 强化学习, PSO, RBFN">
+    <meta name="description" content="高猛 (Gao Meng) - 南开大学控制科学与工程，专注于进化计算、动态优化与多目标优化研究。IEEE CEC 2025与IEEE TSMC论文作者。">
+    <meta name="keywords" content="Gao Meng, 高猛, gaomn, 南开大学, Nankai University, 控制科学与工程, 进化计算, 动态优化, DEGA, CLDM, CSVC-PSO, 多目标优化">
     <meta name="author" content="Gao Meng">
     <meta property="og:title" content="Gao Meng (gaomn) - 控制科学与工程 | 南开大学">
-    <meta property="og:description" content="高猛 (Gao Meng) - 南开大学控制科学与工程专业，专注于机器学习和强化学习研究">
+    <meta property="og:description" content="高猛 (Gao Meng) - 南开大学控制科学与工程，专注于进化计算、动态优化与多目标优化研究。IEEE CEC 2025与IEEE TSMC论文作者。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gaomn.github.io">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Gao Meng (gaomn) - 控制科学与工程 | 南开大学">
-    <meta name="twitter:description" content="高猛 (Gao Meng) - 南开大学控制科学与工程专业，专注于机器学习和强化学习研究">
+    <meta name="twitter:description" content="高猛 (Gao Meng) - 南开大学控制科学与工程，专注于进化计算、动态优化与多目标优化研究。IEEE CEC 2025与IEEE TSMC论文作者。">
     
     <!-- 引入 Tailwind CSS 以进行快速样式设计 -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -139,10 +139,13 @@
                         <h2 class="text-3xl font-bold text-white">关于我</h2>
                         <div class="text-slate-300 space-y-4">
                             <p class="text-lg leading-relaxed">
-                                我是高猛，毕业于南开大学控制科学与工程专业。我专注于机器学习和强化学习领域的研究，对智能优化算法有着浓厚的兴趣。
+                                我是高猛，毕业于南开大学控制科学与工程专业。我专注于智能优化算法、进化计算和动态优化领域的研究，致力于将机器学习与优化算法相结合，解决复杂的实际应用问题。
                             </p>
                             <p class="leading-relaxed">
-                                在研究过程中，为避免大家重复造轮子，发布了一些小零件，包括粒子群优化算法(PSO)、径向基神经网络(RBFN)以及聚类支持向量分类器等。
+                                我的研究工作主要集中在三个方向：<strong>多目标进化算法</strong>（DEGA，发表于IEEE CEC 2025）、<strong>基于对比学习的动态优化决策</strong>（CLDM，发表于IEEE TSMC 2025）、以及<strong>基于支持向量机的智能优化</strong>（CSVC-PSO）。这些研究成果在多无人机调度、动态时链优化等领域取得了显著成效。
+                            </p>
+                            <p class="leading-relaxed">
+                                在研究过程中，为了方便学术界同行的研究工作，我开源了多个算法工具库，包括粒子群优化算法(PSO)、径向基神经网络(RBFN)以及支持向量分类器等，希望能为大家节省"重复造轮子"的时间。
                             </p>
                         </div>
                         
@@ -175,11 +178,12 @@
                             <h3 class="text-xl font-semibold">研究领域</h3>
                         </div>
                         <ul class="space-y-2 text-slate-300">
-                            <li>• 机器学习</li>
-                            <li>• 强化学习</li>
-                            <li>• 智能优化算法</li>
-                            <li>• 神经网络</li>
+                            <li>• 进化计算与遗传算法</li>
+                            <li>• 动态优化问题</li>
+                            <li>• 多目标优化</li>
+                            <li>• 对比学习与决策</li>
                             <li>• 支持向量机</li>
+                            <li>• 无人机调度优化</li>
                         </ul>
                     </div>
 
@@ -207,9 +211,9 @@
                         <ul class="space-y-2 text-slate-300">
                             <li>• 控制科学与工程</li>
                             <li>• 南开大学</li>
-                            <li>• 智能控制理论</li>
-                            <li>• 系统优化</li>
-                            <li>• 论文发表</li>
+                            <li>• IEEE CEC 2025论文发表</li>
+                            <li>• IEEE TSMC期刊论文</li>
+                            <li>• 智能控制与优化</li>
                         </ul>
                     </div>
                 </div>
@@ -223,6 +227,62 @@
                 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
+                    <!-- DEGA项目 - 核心研究项目 -->
+                    <div class="project-card bg-slate-800/60 backdrop-blur-xl border border-slate-700 rounded-xl p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-cyan-400">DEGA</h3>
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="star" class="w-4 h-4 text-yellow-400"></i>
+                                <span class="text-slate-400 text-sm">0</span>
+                                <span class="bg-cyan-600/30 text-cyan-300 px-2 py-0.5 rounded text-xs ml-2">IEEE CEC 2025</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 mb-4">基于双编码的遗传算法，用于消防场景下的多无人机多目标调度优化问题。</p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-600/20 text-blue-400 px-2 py-1 rounded text-sm">Python</span>
+                            <a href="https://github.com/gaomn/DEGA" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CLDM项目 - 核心研究项目 -->
+                    <div class="project-card bg-slate-800/60 backdrop-blur-xl border border-slate-700 rounded-xl p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-cyan-400">CLDM</h3>
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="star" class="w-4 h-4 text-yellow-400"></i>
+                                <span class="text-slate-400 text-sm">0</span>
+                                <span class="bg-purple-600/30 text-purple-300 px-2 py-0.5 rounded text-xs ml-2">IEEE TSMC</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 mb-4">基于对比学习的动态时链优化决策方法，采用新颖的相对比较策略进行决策。</p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-600/20 text-blue-400 px-2 py-1 rounded text-sm">Python</span>
+                            <a href="https://github.com/gaomn/CLDM" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CSVC-PSO项目 - 核心研究项目 -->
+                    <div class="project-card bg-slate-800/60 backdrop-blur-xl border border-slate-700 rounded-xl p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-cyan-400">CSVC-PSO</h3>
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="star" class="w-4 h-4 text-yellow-400"></i>
+                                <span class="text-slate-400 text-sm">1</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 mb-4">基于支持向量分类器的粒子群优化算法，应用于动态多峰基准问题。</p>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-600/20 text-blue-400 px-2 py-1 rounded text-sm">Python</span>
+                            <a href="https://github.com/gaomn/CSVC-PSO" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
                     <!-- PSO项目 -->
                     <div class="project-card bg-slate-800/60 backdrop-blur-xl border border-slate-700 rounded-xl p-6">
                         <div class="flex items-center justify-between mb-4">
@@ -232,7 +292,7 @@
                                 <span class="text-slate-400 text-sm">2</span>
                             </div>
                         </div>
-                        <p class="text-slate-300 mb-4">粒子群优化算法实现，用于解决优化问题的智能算法。</p>
+                        <p class="text-slate-300 mb-4">粒子群优化算法实现，用于解决优化问题的智能算法工具库。</p>
                         <div class="flex items-center justify-between">
                             <span class="bg-blue-600/20 text-blue-400 px-2 py-1 rounded text-sm">Python</span>
                             <a href="https://github.com/gaomn/PSO" class="text-cyan-400 hover:text-cyan-300 transition-colors">
@@ -254,60 +314,6 @@
                         <div class="flex items-center justify-between">
                             <span class="bg-blue-600/20 text-blue-400 px-2 py-1 rounded text-sm">Python</span>
                             <a href="https://github.com/gaomn/RBFN" class="text-cyan-400 hover:text-cyan-300 transition-colors">
-                                <i data-lucide="external-link" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- LLM_LocalAPI项目 -->
-                    <div class="project-card bg-slate-800/60 backdrop-blur-xl border border-slate-700 rounded-xl p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-cyan-400">LLM_LocalAPI</h3>
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="star" class="w-4 h-4 text-yellow-400"></i>
-                                <span class="text-slate-400 text-sm">2</span>
-                            </div>
-                        </div>
-                        <p class="text-slate-300 mb-4">本地大语言模型API服务，提供便捷的AI模型调用接口。</p>
-                        <div class="flex items-center justify-between">
-                            <span class="bg-orange-600/20 text-orange-400 px-2 py-1 rounded text-sm">HTML</span>
-                            <a href="https://github.com/gaomn/LLM_LocalAPI" class="text-cyan-400 hover:text-cyan-300 transition-colors">
-                                <i data-lucide="external-link" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- CSVC-PSO项目 -->
-                    <div class="project-card bg-slate-800/60 backdrop-blur-xl border border-slate-700 rounded-xl p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-cyan-400">CSVC-PSO</h3>
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="star" class="w-4 h-4 text-yellow-400"></i>
-                                <span class="text-slate-400 text-sm">1</span>
-                            </div>
-                        </div>
-                        <p class="text-slate-300 mb-4">基于聚类的支持向量分类器，用于动态时间链接优化的研究项目。</p>
-                        <div class="flex items-center justify-between">
-                            <span class="bg-blue-600/20 text-blue-400 px-2 py-1 rounded text-sm">Python</span>
-                            <a href="https://github.com/gaomn/CSVC-PSO" class="text-cyan-400 hover:text-cyan-300 transition-colors">
-                                <i data-lucide="external-link" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Codes-4pd项目 -->
-                    <div class="project-card bg-slate-800/60 backdrop-blur-xl border border-slate-700 rounded-xl p-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-semibold text-cyan-400">Codes-4pd</h3>
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="star" class="w-4 h-4 text-yellow-400"></i>
-                                <span class="text-slate-400 text-sm">2</span>
-                            </div>
-                        </div>
-                        <p class="text-slate-300 mb-4">学术研究代码集合，包含多个算法和实验的实现代码。</p>
-                        <div class="flex items-center justify-between">
-                            <span class="bg-blue-600/20 text-blue-400 px-2 py-1 rounded text-sm">Python</span>
-                            <a href="https://github.com/gaomn/Codes-4pd" class="text-cyan-400 hover:text-cyan-300 transition-colors">
                                 <i data-lucide="external-link" class="w-4 h-4"></i>
                             </a>
                         </div>
@@ -411,7 +417,7 @@
                 © 2025 Gao Meng (gaomn). 基于 MIT 许可证开源。
             </p>
             <p class="text-slate-500 text-xs mt-2">
-                南开大学控制科学与工程 | 机器学习与强化学习研究
+                南开大学控制科学与工程 | 进化计算与动态优化研究
             </p>
         </div>
     </footer>
